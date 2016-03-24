@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - BDD_pphelipo@localhost" uuid="19535b40-c9fe-4229-aef6-b259ed5625b1">
+    <database-info product="MySQL" version="5.6.28-1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.2">
+      <schema id="1" name="BDD_pphelipo"/>
+      <table id="2" parent="1" name="commercant"/>
+      <table id="3" parent="1" name="type_commercant"/>
+      <column id="4" parent="2" name="id_commercant">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="5" parent="2" name="nom">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="6" parent="2" name="date_installation">
+        <data-type>date</data-type>
+      </column>
+      <column id="7" parent="2" name="prix_location">
+        <data-type>float(7,2)</data-type>
+      </column>
+      <column id="8" parent="2" name="id_type_commercant">
+        <data-type>int(10)</data-type>
+      </column>
+      <key id="9" parent="2" name="PRIMARY">
+        <columns>id_commercant</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="10" parent="2" name="commercant_ibfk_1">
+        <columns>id_type_commercant</columns>
+        <ref-key>type_commercant.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="11" parent="3" name="id_type">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="12" parent="3" name="noms">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <key id="13" parent="3" name="PRIMARY">
+        <columns>id_type</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

@@ -1,0 +1,63 @@
+{% extends "v_base.twig" %}
+
+
+{% block contenu %}
+    <div class="row">
+        <form action="{{ path }}index.php/commercant/validFormEditerCommercant/{{ commercant.id_commercant }}" method="post">
+            <fieldset>
+                <legend>Édition d'un commerçant</legend>
+
+                <div class="form-group">
+                    <label>Nom du commerçant:
+                        <input class="form-control" name="nom" type="text" value="{{ commercant.nom }}"/>
+                        {% if erreurs.nom is defined %}
+                            <span class="label label-danger">{{erreurs.nom}}</span>
+                        {% endif %}
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Type de commerce:
+                    <select name="type">
+                        {% if  types is not defined or commercant.id_type_commercant is empty   %}
+                            <option value="">Veuillez sélectionner un type</option>
+                        {% endif %}
+                        {% for type in types %}
+                            <option value="{{ type.id_type }}"
+                                    {% if commercant.id_type_commercant is defined and type.id_type == commercant.id_type_commercant %}selected{% endif %}>
+                                {{ type.noms }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                        {% if erreurs.id_type_commercant is defined %}
+                            <span class="label label-danger">{{erreurs.id_type_commercant}}</span>
+                        {% endif %}
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Prix de la location:
+                        <input class="form-control" name="tarif" type="text" value="{{ commercant.prix_location }}"/>
+                        {% if erreurs.prix_location is defined %}
+                            <span class="label label-danger">{{erreurs.prix_location}}</span>
+                        {% endif %}
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Date d'installation:
+                        <input class="form-control" name="date_installation" type="date" value="{{ commercant.date_installation }}"/>
+                        {% if erreurs.date_installation is defined %}
+                            <span class="label label-danger">{{erreurs.date_installation}}</span>
+                        {% endif %}
+                    </label></div>
+
+                <input class="btn btn-success" type="submit" value="Éditer" name="creationCommercant" />
+            </fieldset>
+        </form>
+        <form style="padding-top: 15px;" action="{{ path }}index.php/commercant/afficherCommercants" method="post">
+
+            <input class="btn btn-warning" type="submit" value="Annuler" name="annulation" />
+        </form>
+    </div>
+{% endblock %}

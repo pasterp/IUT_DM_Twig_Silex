@@ -1,0 +1,23 @@
+{% extends "v_base.twig" %}
+
+
+{% block contenu %}
+    <div class="row">
+        <form action="{{ path }}index.php/typeCommercant/validFormCreerType/" method="post">
+            <fieldset>
+                <legend>Édition d'un type</legend>
+
+                <div class="form-group">
+                    <label>Nom du type:
+                        <input class="form-control" name="noms" type="text" />
+                    </label>
+                </div>
+
+                <input class="btn btn-success" type="submit" value="Créer" name="editionType" />
+            </fieldset>
+        </form>
+        <form action="{{ path }}index.php/typeCommercant/listeTypeCommercant/" method="post">
+            <input class="btn btn-warning" type="submit" value="Annuler" name="annulation" />
+        </form>
+    </div>
+{% endblock %}

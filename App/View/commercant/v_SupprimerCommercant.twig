@@ -1,0 +1,23 @@
+{% extends "v_base.twig" %}
+
+
+{% block contenu %}
+    <div class="row">
+        <fieldset>
+            <legend>Confirmation de suppression:</legend>
+            <p>
+                Commercant n°{{ commercant.id_commercant }}<br />
+                Nom : {{ commercant.nom }}<br />
+                Location : {{ commercant.prix_location }} €<br />
+                Date d'installation : {{ commercant.date_installation }}<br />
+            </p>
+            <form action="{{ path }}index.php/commercant/validSuppressionCommercant/{{ commercant.id_commercant }}" method="post">
+                <input type="hidden" id="_method" name="_method" value="delete" />
+                <input class="btn btn-danger" type="submit" value="Supprimer" name="suppression" />
+            </form>
+            <form action="{{ path }}index.php/commercant/afficherCommercants" method="post">
+                <input class="btn btn-warning" type="submit" value="Annuler" name="annulation" />
+            </form>
+        </fieldset>
+    </div>
+{% endblock %}
