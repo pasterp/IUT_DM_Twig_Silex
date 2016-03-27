@@ -48,7 +48,7 @@
 
                 <div class="form-group">
                 <label>Date d'installation:
-                    <input class="form-control" name="date_installation" type="date" value="{% if donnees is defined %}{{ donnees.date_installation  }}{% endif %}" />
+                    <input class="form-control" name="date_installation" type="text" placeholder="dd/mm/aaaa" value="{% if donnees is defined %}{{ donnees.date_installation  }}{% endif %}" />
                     {% if erreurs.date_installation is defined %}
                         <span class="label label-danger">{{erreurs.date_installation}}</span>
                     {% endif %}
@@ -57,7 +57,7 @@
                 <input class="btn btn-success" type="submit" value="Créer" name="creationCommercant" />
             </fieldset>
         </form>
-        <form  style="padding-top: 15px;" action="{{ path }}index.php/commercant/afficherCommercants" method="post">
+        <form  style="padding-top: 15px;" action="{{ url('commercant.liste') }}" method="post">
             <input class="btn btn-warning" type="submit" value="Annuler" name="annulation" />
         </form>
     </div>

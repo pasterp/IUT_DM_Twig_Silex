@@ -19,12 +19,16 @@
                         <td>{{ commercant.id_commercant }}</td>
                         <td>{{ commercant.nom }}</td>
                         <td>{{ commercant.noms }}</td>
-                        <td>{{ commercant.date_installation }}</td>
+                        <td>{{ viewDate(commercant.date_installation)}}</td>
                         <td>{{ commercant.prix_location }}€</td>
-                        <td>
-                            <a href="{{ path }}index.php/commercant/editerCommercant/{{ commercant.id_commercant }}"><span class="glyphicon glyphicon-cog"></span> Modifier</a>
-                            <a href="{{ path }}index.php/commercant/supprimerCommercant/{{ commercant.id_commercant }}"><span class="glyphicon glyphicon-trash"></span> Supprimer</a>
-                        </td>
+                        <td>{% if app.session.get('logged') is defined and  app.session.get('logged') == 1 and app.session.get('droit') == 'admin' %}
+                            <a href="{{ url('commercant.editer', {'id' : commercant.id_commercant}) }}"><span class="glyphicon glyphicon-cog"></span> Modifier</a>
+                            {#<a href="{{ path }}index.php/commercant/supprimerCommercant/{{ commercant.id_commercant }}"><span class="glyphicon glyphicon-trash"></span> Supprimer</a>#}
+                            <a href="{{ url('commercant.supprimer',{'id' :commercant.id_commercant}) }}"><span class="glyphicon glyphicon-trash"></span> Supprimer</a>
+                            {% else %}
+                            <em>Droits insuffisants</em>
+                            {% endif %}
+                    </td>
                     </tr>
                 {% endfor %}
             </tbody>

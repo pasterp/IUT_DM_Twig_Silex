@@ -24,7 +24,7 @@ class CommercantModel
         $queryBuilder = new QueryBuilder($this->connexionSQL);
         $queryBuilder
             ->select('c.id_commercant', 'c.nom', 'c.date_installation', 'c.id_type_commercant', 'c.prix_location', 't.noms')
-            ->from('commercant', 'c')->leftJoin('c', 'type_commercant', 't', 'c.id_type_commercant=t.id_type')->addOrderBy('c.nom', 'ASC');
+            ->from('commercant', 'c')->leftJoin('c', 'type_commercant', 't', 'c.id_type_commercant=t.id_type')->addOrderBy('c.id_commercant', 'ASC');
 
         return $queryBuilder->execute()->fetchAll();
     }
@@ -52,6 +52,22 @@ class CommercantModel
         ->from('commercant', 'c')->where('c.id_commercant = :id')->setParameter('id', (int)$id);
         return $queryBuilder->execute()->fetch();
     }
+
+    public function editerCommercant($id, $donnees){
+        $donnees['id_commercant'] = $id;
+        $queryBuilder = new QueryBuilder($this->connexionSQL);
+
+        $queryBuilder->update('commercant')
+            ->set('nom', ':nom')
+            ->set('id_type_commercant', ':id_type_commercant')
+            ->set('date_installation', ':date_installation')
+            ->set('prix_location', ':prix_location')
+            ->where('id_commercant = :id_commercant')
+            ->setParameters($donnees);
+
+        $queryBuilder->execute();
+    }
+
 /* TODO: EDITER COMMERCANT
     public function editerCommercant($id, $donnees)
     {

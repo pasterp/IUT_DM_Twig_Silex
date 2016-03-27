@@ -23,11 +23,28 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li {% if page is defined and page == "index" %}class="active"{% endif %}><a href="{{ path }}index.php"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
-                <li {% if page is defined and page == "liste" %}class="active"{% endif %}><a href="{{ path }}index.php/commercant/listeCommercant"><span class="glyphicon glyphicon-th-list"></span> Liste des commerçants</a></li>
-                <li {% if page is defined and page == "liste2" %}class="active"{% endif %}><a href="{{ path }}index.php/typeCommercant/listeTypeCommercant"><span class="glyphicon glyphicon-th-list"></span> Liste des types de commerçants</a></li>
-                <li {% if page is defined and page == "ajout" %}class="active"{% endif %}><a href="{{ path }}index.php/commercant/creerCommercant"><span class="glyphicon glyphicon-plus-sign"></span> Ajouter un commerçant</a></li>
+                <li {% if page is defined and page == "index" %}class="active"{% endif %}><a href="{{ url('index') }}"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
+                <li {% if page is defined and page == "liste" %}class="active"{% endif %}><a href="{{ url('commercant.liste') }}"><span class="glyphicon glyphicon-th-list"></span> Liste des commerçants</a></li>
+                {% if app.session.get('logged') is defined and  app.session.get('logged') == 1 %}<li {% if page is defined and page == "liste2" %}class="active"{% endif %}><a href="{{ url('typesCommercants.liste') }}"><span class="glyphicon glyphicon-th-list"></span> Liste des types de commerçants</a></li>{% endif %}
+                {% if app.session.get('logged') is defined and  app.session.get('logged') == 1 and app.session.get('droit') == 'admin' %}<li {% if page is defined and page == "ajout" %}class="active"{% endif %}><a href="{{ url('commercant.creer') }}" title="Ajout d'un commerçant"><span class="glyphicon glyphicon-plus-sign"></span> Ajout</a></li>{% endif %}
             </ul>
+        {% if app.session.get('logged') is defined and  app.session.get('logged') == 1 %}
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="{{ url('user.logout') }}">Déconnexion ({{ app.session.get('user') }})</a>
+                </li>
+            </ul>
+        {% else %}
+            <form class="navbar-form navbar-right" role="search" action="{{ url('user.login') }}" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="username" placeholder="Nom d'utilisateur">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="Mot de passe">
+                </div>
+                <button type="submit" class="btn btn-default">Connexion</button>
+            </form>
+        {% endif %}
         </div>
     </div>
 </nav>

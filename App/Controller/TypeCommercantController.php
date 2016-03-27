@@ -11,10 +11,7 @@ namespace App\Controller;
 
 
 use Silex\Application;
-use Silex\ControllerCollection;
 use Silex\ControllerProviderInterface;
-use Symfony\Component\HttpFoundation\Request;
-
 
 use App\Model\TypeCommercantModel;
 
@@ -37,7 +34,7 @@ class TypeCommercantController implements  ControllerProviderInterface
     public function connect(Application $app)
     {
         $index = $app['controllers_factory'];
-        $index->get("/", 'App\Controller\TypeCommercantController::show');
+        $index->get("/", 'App\Controller\TypeCommercantController::show')->bind('typesCommercants.liste');
         $index->get("/listeTypeCommercant", 'App\Controller\TypeCommercantController::show');
         return $index;
 

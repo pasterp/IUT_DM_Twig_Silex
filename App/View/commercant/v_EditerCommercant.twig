@@ -3,7 +3,8 @@
 
 {% block contenu %}
     <div class="row">
-        <form action="{{ path }}index.php/commercant/validFormEditerCommercant/{{ commercant.id_commercant }}" method="post">
+        <form action="{{ path }}index.php/commercant/editerCommercant/{{ commercant.id_commercant }}" method="post">
+            <input type="hidden" id="_method" name="_method" value="put" />
             <fieldset>
                 <legend>Édition d'un commerçant</legend>
 
@@ -46,7 +47,7 @@
 
                 <div class="form-group">
                     <label>Date d'installation:
-                        <input class="form-control" name="date_installation" type="date" value="{{ commercant.date_installation }}"/>
+                        <input class="form-control" name="date_installation" type="text" value="{{ viewDate(commercant.date_installation) }}"/>
                         {% if erreurs.date_installation is defined %}
                             <span class="label label-danger">{{erreurs.date_installation}}</span>
                         {% endif %}
@@ -55,7 +56,7 @@
                 <input class="btn btn-success" type="submit" value="Éditer" name="creationCommercant" />
             </fieldset>
         </form>
-        <form style="padding-top: 15px;" action="{{ path }}index.php/commercant/afficherCommercants" method="post">
+        <form style="padding-top: 15px;" action="{{ url('commercant.liste') }}" method="post">
 
             <input class="btn btn-warning" type="submit" value="Annuler" name="annulation" />
         </form>

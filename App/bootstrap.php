@@ -9,10 +9,6 @@ $app = new Silex\Application();
 $app['debug'] = true;
 
 
-$app->get('/hello/{name}', function ($name) use ($app) {
-  return 'Hello '.$app->escape($name);
-});
-
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options' => array(
         'driver' => 'pdo_mysql',
@@ -32,16 +28,18 @@ $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 $app->register(new Silex\Provider\SessionServiceProvider());
 
 
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
-    "twig.path" => dirname(__DIR__) . "/App/View"));
 
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => join(DIRECTORY_SEPARATOR, array(__DIR__, 'View'))
 ));
 
+$app['twig']->addFunction('viewDate', new Twig_Function_Function('App\Helper\DateHelper::transformerToFrance'));
+
+
+$app->mount('/', new App\Controller\IndexController());
 $app->mount('/typeCommercant', new App\Controller\TypeCommercantController($app));
-$app->mount("/commercant", new App\Controller\CommercantController($app));
-$app->mount("/", new App\Controller\IndexController());
+$app->mount('/commercant', new App\Controller\CommercantController($app));
+$app->mount('/user', new App\Controller\UserController($app));
 
 use Symfony\Component\HttpFoundation\Request;
 Request::enableHttpMethodParameterOverride();

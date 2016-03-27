@@ -10,41 +10,59 @@
       <schema id="1" name="BDD_pphelipo"/>
       <table id="2" parent="1" name="commercant"/>
       <table id="3" parent="1" name="type_commercant"/>
-      <column id="4" parent="2" name="id_commercant">
+      <table id="4" parent="1" name="user_commercant"/>
+      <column id="5" parent="2" name="id_commercant">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="5" parent="2" name="nom">
+      <column id="6" parent="2" name="nom">
         <data-type>varchar(50)</data-type>
       </column>
-      <column id="6" parent="2" name="date_installation">
-        <data-type>date</data-type>
+      <column id="7" parent="2" name="date_installation">
+        <data-type>varchar(10)</data-type>
       </column>
-      <column id="7" parent="2" name="prix_location">
+      <column id="8" parent="2" name="prix_location">
         <data-type>float(7,2)</data-type>
       </column>
-      <column id="8" parent="2" name="id_type_commercant">
+      <column id="9" parent="2" name="id_type_commercant">
         <data-type>int(10)</data-type>
       </column>
-      <key id="9" parent="2" name="PRIMARY">
+      <key id="10" parent="2" name="PRIMARY">
         <columns>id_commercant</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="10" parent="2" name="commercant_ibfk_1">
+      <foreign-key id="11" parent="2" name="commercant_ibfk_1">
         <columns>id_type_commercant</columns>
         <ref-key>type_commercant.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="11" parent="3" name="id_type">
+      <column id="12" parent="3" name="id_type">
         <mandatory>1</mandatory>
         <data-type>int(10)</data-type>
       </column>
-      <column id="12" parent="3" name="noms">
+      <column id="13" parent="3" name="noms">
         <data-type>varchar(20)</data-type>
       </column>
-      <key id="13" parent="3" name="PRIMARY">
+      <key id="14" parent="3" name="PRIMARY">
         <columns>id_type</columns>
+        <primary>1</primary>
+      </key>
+      <column id="15" parent="4" name="id_user">
+        <mandatory>1</mandatory>
+        <data-type>int(6)</data-type>
+      </column>
+      <column id="16" parent="4" name="droits_user">
+        <data-type>enum(&apos;admin&apos;, &apos;user&apos;)</data-type>
+      </column>
+      <column id="17" parent="4" name="nom_user">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="18" parent="4" name="mdp_user">
+        <data-type>varchar(60)</data-type>
+      </column>
+      <key id="19" parent="4" name="PRIMARY">
+        <columns>id_user</columns>
         <primary>1</primary>
       </key>
     </database-model>
