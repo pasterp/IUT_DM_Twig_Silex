@@ -13,6 +13,7 @@
             </p>
             <form action="{{ path }}index.php/commercant/validSuppressionCommercant/{{ commercant.id_commercant }}" method="post">
                 <input type="hidden" id="_method" name="_method" value="delete" />
+                <input type="hidden" id="_token" name="_token" value="{{ csrf }}">
                 <input class="btn btn-danger" type="submit" value="Supprimer" name="suppression" />
             </form>
             <form action="{{ url('commercant.liste') }}" method="post">

@@ -17,6 +17,9 @@ use Silex\ControllerProviderInterface;
 use App\Model\CommercantModel;
 use App\Helper\DateHelper;
 
+
+//Token contrant les CSRF sur la suppression
+
 class CommercantController implements ControllerProviderInterface
 {
     private $commercantModel;
@@ -85,12 +88,18 @@ class CommercantController implements ControllerProviderInterface
         $this->commercantModel = new CommercantModel($app);
         $commercant = $this->commercantModel->getCommercant($id);
 
-        return $app["twig"]->render("commercant/v_SupprimerCommercant.twig", array('commercant' => $commercant, 'page' => 'other', 'path' => PATH, 'titre' => 'Suppresion d\'un commerçant', '_SESSION' => $_SESSION));
+        $csrf = base64_encode(random_bytes(10));
+        $app['session']->set('csrf', $csrf);
+
+        return $app["twig"]->render("commercant/v_SupprimerCommercant.twig", array('csrf' => $csrf, 'commercant' => $commercant, 'page' => 'other', 'path' => PATH, 'titre' => 'Suppresion d\'un commerçant', '_SESSION' => $_SESSION));
     }
 
     public function supprimerCommercant(Application $app, $id){
         if($app['session']->get('droit') != 'admin'){
             return $this->manqueDeDroits($app);
+        }
+        if(!hash_equals($_POST['_token'], $app['session']->get('csrf'))){
+            return $this->requeteNonAutorisee($app);
         }
 
         $this->commercantModel = new CommercantModel($app);
@@ -152,6 +161,11 @@ class CommercantController implements ControllerProviderInterface
 
     private function manqueDeDroits(Application $app){
         $app['session']->getFlashBag()->add('error', 'Droits insuffisants pour l\'opération demandée');
+        return $app->redirect($app["url_generator"]->generate('commercant.liste'));
+    }
+
+    private function requeteNonAutorisee(Application $app){
+        $app['session']->getFlashBag()->add('error', 'Requête détournée !');
         return $app->redirect($app["url_generator"]->generate('commercant.liste'));
     }
 
