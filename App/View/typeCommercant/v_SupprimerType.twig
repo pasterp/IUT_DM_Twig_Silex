@@ -9,7 +9,8 @@
                 Type n°{{ type_commercant.id_type }}<br />
                 Nom : {{ type_commercant.noms }}<br />
             </p>
-            <form action="{{ path }}index.php/typeCommercant/validSuppressionTypeCommercant/{{ type_commercant.id_type }}" method="post">
+            <form action="{{ url('typesCommercants.supprimer', {'id':type_commercant.id_type}) }}" method="post">
+                <input type="hidden" id="_method" name="_method" value="delete" />
                 <input class="btn btn-danger" type="submit" value="Supprimer" name="suppression" />
             </form>
             <form action="{{ path }}index.php/typeCommercant/listeTypeCommercant/" method="post">

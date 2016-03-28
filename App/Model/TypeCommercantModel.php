@@ -28,41 +28,44 @@ class TypeCommercantModel
         return $queryBuilder->execute()->fetchAll();
     }
 
-    /*
-    public function getAllTypeCommercants()
-    {
-        $requete="SELECT id_type, noms FROM BDD_pphelipo.type_commercant;";
-        try {
-            $select = $this->connexionSQL->query($requete);
-            $results = $select->fetchAll();
-            return $results;
-        }
-        catch ( Exception $e ) {
-            echo "Erreur de récupération de tous les commerçants";
-        }
-    }
-
     public function getType($id){
-        $req = "SELECT id_type, noms FROM type_commercant WHERE id_type='".$id."';";
-        try {
-            $select = $this->connexionSQL->query($req);
-            $results = $select->fetch();
-            return $results;
-        }
-        catch ( Exception $e ) {
-            echo "Erreur de récupération de tous les types";
-        }
+        $queryBuilder = new QueryBuilder($this->connexionSQL);
+        $queryBuilder
+            ->select('id_type', 'noms')
+            ->from('type_commercant')
+            ->where('id_type = :id')
+            ->setParameter('id', $id);
+
+        return $queryBuilder->execute()->fetch();
     }
 
     public function removeType($id){
-        $req = "DELETE FROM type_commercant WHERE id_type='".$id."';";
-        $this->connexionSQL->exec($req);
+        $queryBuilder = new QueryBuilder($this->connexionSQL);
+        $queryBuilder
+            ->delete('type_commercant')
+            ->where('id_type = :id')
+            ->setParameter('id', $id);
+
+        $queryBuilder->execute();
     }
 
     public function editType($id, $donnees){
-        $req = "UPDATE type_commercant SET noms=:noms WHERE id_type='".$id."';";
-        $req = $this->connexionSQL->prepare($req);
-        $req->execute($donnees);
+        $queryBuilder = new QueryBuilder($this->connexionSQL);
+        $queryBuilder
+            ->update('type_commercant')
+            ->set('noms', ':noms')
+            ->where('id_type = :id')
+            ->setParameters($donnees)
+            ->setParameter(':id', $id);
+
+        $queryBuilder->execute();
     }
-    */
+
+    public function addType($donnees){
+        $queryBuilder = new QueryBuilder($this->connexionSQL);
+        $queryBuilder->insert('type_commercant')
+            ->values(['noms' => ':noms'])->setParameters($donnees);
+
+        $queryBuilder->execute();
+    }
 }

@@ -67,12 +67,4 @@ class CommercantModel
 
         $queryBuilder->execute();
     }
-
-/* TODO: EDITER COMMERCANT
-    public function editerCommercant($id, $donnees)
-    {
-        $req = "UPDATE commercant SET nom=:nom, id_type_commercant=:id_type_commercant, date_installation=:date_installation, prix_location=:prix_location WHERE id_commercant='".$id."'";
-        $req = $this->connexionSQL->prepare($req);
-        return $req->execute($donnees);
-    }*/
 }

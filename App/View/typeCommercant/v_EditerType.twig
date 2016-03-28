@@ -3,7 +3,8 @@
 
 {% block contenu %}
     <div class="row">
-        <form action="{{ path }}index.php/typeCommercant/validFormEditerType/{{ type.id_type }}" method="post">
+        <form action="{{ url('typesCommercants.editer', {'id':type.id_type}) }}" method="post">
+            <input type="hidden" id="_method" name="_method" value="put" />
             <fieldset>
                 <legend>Édition d'un type</legend>
 

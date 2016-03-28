@@ -6,14 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="238bafd5-be6e-497d-8f5d-09749fb62fb2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Controller/CommercantController.php" afterPath="$PROJECT_DIR$/App/Controller/CommercantController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/View/commercant/v_SupprimerCommercant.twig" afterPath="$PROJECT_DIR$/App/View/commercant/v_SupprimerCommercant.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Controller/TypeCommercantController.php" afterPath="$PROJECT_DIR$/App/Controller/TypeCommercantController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Model/CommercantModel.php" afterPath="$PROJECT_DIR$/App/Model/CommercantModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Model/TypeCommercantModel.php" afterPath="$PROJECT_DIR$/App/Model/TypeCommercantModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/View/typeCommercant/v_CreerType.twig" afterPath="$PROJECT_DIR$/App/View/typeCommercant/v_CreerType.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/View/typeCommercant/v_EditerType.twig" afterPath="$PROJECT_DIR$/App/View/typeCommercant/v_EditerType.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/View/typeCommercant/v_SupprimerType.twig" afterPath="$PROJECT_DIR$/App/View/typeCommercant/v_SupprimerType.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/View/typeCommercant/v_listeAll.twig" afterPath="$PROJECT_DIR$/App/View/typeCommercant/v_listeAll.twig" />
     </list>
     <ignored path="nouvelEspoir.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,40 +65,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bootstrap.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/bootstrap.php">
+      <file leaf-file-name="TypeCommercantModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Model/TypeCommercantModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.2083335">
-              <caret line="35" column="70" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
-              <folding>
-                <element signature="e#279#536#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="v_SupprimerCommercant.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/View/commercant/v_SupprimerCommercant.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125">
-              <caret line="15" column="61" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="61" />
+            <state vertical-scroll-proportion="-10.833333">
+              <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommercantController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Controller/CommercantController.php">
+      <file leaf-file-name="TypeCommercantController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Controller/TypeCommercantController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59210527">
-              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.7894737">
+              <caret line="71" column="89" selection-start-line="71" selection-start-column="89" selection-end-line="71" selection-end-column="89" />
               <folding>
-                <element signature="e#117#151#0#PHP" expanded="true" />
-                <element signature="e#1044#1439#0#PHP" expanded="false" />
-                <element signature="e#1445#3249#0#PHP" expanded="false" />
-                <element signature="e#4298#4856#0#PHP" expanded="false" />
-                <element signature="e#4862#6815#0#PHP" expanded="false" />
+                <element signature="e#117#139#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="v_listeAll.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/View/typeCommercant/v_listeAll.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5">
+              <caret line="4" column="52" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="v_CreerType.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/View/typeCommercant/v_CreerType.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.4583333">
+              <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,27 +118,27 @@
         <option value="$PROJECT_DIR$/App/Controller/IndexController.php" />
         <option value="$PROJECT_DIR$/App/Model/commercant_m.php" />
         <option value="$PROJECT_DIR$/App/config.php" />
-        <option value="$PROJECT_DIR$/App/Model/TypeCommercantModel.php" />
-        <option value="$PROJECT_DIR$/App/View/typeCommercant/v_SupprimerType.twig" />
-        <option value="$PROJECT_DIR$/App/View/typeCommercant/v_EditerType.twig" />
-        <option value="$PROJECT_DIR$/App/View/typeCommercant/v_CreerType.twig" />
-        <option value="$PROJECT_DIR$/App/View/typeCommercant/v_listeAll.twig" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/App/Model/CommercantModel.php" />
         <option value="$PROJECT_DIR$/App/Model/UserModel.php" />
         <option value="$PROJECT_DIR$/App/View/v_base.twig" />
         <option value="$PROJECT_DIR$/App/View/v_header.twig" />
-        <option value="$PROJECT_DIR$/App/Controller/TypeCommercantController.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/bdd/base.sql" />
         <option value="$PROJECT_DIR$/App/bootstrap.php" />
         <option value="$PROJECT_DIR$/App/View/commercant/v_listeAll.twig" />
         <option value="$PROJECT_DIR$/App/Helper/DateHelper.php" />
-        <option value="$PROJECT_DIR$/App/View/commercant/v_EditerCommercant.twig" />
         <option value="$PROJECT_DIR$/App/View/commercant/v_CreerCommercant.twig" />
         <option value="$PROJECT_DIR$/App/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/App/View/commercant/v_SupprimerCommercant.twig" />
         <option value="$PROJECT_DIR$/App/Controller/CommercantController.php" />
+        <option value="$PROJECT_DIR$/App/View/commercant/v_EditerCommercant.twig" />
+        <option value="$PROJECT_DIR$/App/View/typeCommercant/v_listeAll.twig" />
+        <option value="$PROJECT_DIR$/App/View/typeCommercant/v_CreerType.twig" />
+        <option value="$PROJECT_DIR$/App/View/typeCommercant/v_EditerType.twig" />
+        <option value="$PROJECT_DIR$/App/View/typeCommercant/v_SupprimerType.twig" />
+        <option value="$PROJECT_DIR$/App/Model/TypeCommercantModel.php" />
+        <option value="$PROJECT_DIR$/App/Controller/TypeCommercantController.php" />
       </list>
     </option>
   </component>
@@ -274,6 +277,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="typeCommercant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nouvelEspoir" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nouvelEspoir" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="commercant" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -334,8 +359,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,29 +465,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1374" height="748" extended-state="6" />
+    <frame x="-4" y="0" width="1374" height="748" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.50303954" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21450152" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21752267" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.50303954" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.4969605" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -486,11 +511,28 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/App/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#279#536#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/View/commercant/v_SupprimerCommercant.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/View/v_header.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -498,7 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -506,10 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-          <folding>
-            <element signature="e#7#87#0#PHP" expanded="false" />
-            <element signature="e#111#133#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -529,52 +566,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="128" column="86" selection-start-line="128" selection-start-column="19" selection-end-line="128" selection-end-column="86" />
           <folding>
-            <element signature="e#3255#3779#0#PHP" expanded="false" />
-            <element signature="e#3785#4292#0#PHP" expanded="false" />
+            <element signature="e#117#151#0#PHP" expanded="true" />
+            <element signature="e#1044#1439#0#PHP" expanded="false" />
+            <element signature="e#1445#3249#0#PHP" expanded="false" />
+            <element signature="e#4298#4856#0#PHP" expanded="false" />
+            <element signature="e#4862#6815#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Model/TypeCommercantModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-          <folding>
-            <element signature="e#7#89#0#PHP" expanded="false" />
-            <element signature="e#113#150#0#PHP" expanded="false" />
-            <marker date="1458812016936" expanded="true" signature="693:747" placeholder="SELECT id_ty..type_commercant..." />
-            <marker date="1458812016936" expanded="true" signature="1075:1140" placeholder="SELECT id_ty..type_commercant..." />
-            <marker date="1458812016936" expanded="true" signature="1458:1509" placeholder="DELETE FROM ..." />
-            <marker date="1458812016936" expanded="true" signature="1622:1683" placeholder="UPDATE type_..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/View/typeCommercant/v_CreerType.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/View/typeCommercant/v_SupprimerType.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48387095">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/View/typeCommercant/v_listeAll.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50933784">
-          <caret line="20" column="110" selection-start-line="20" selection-start-column="110" selection-end-line="20" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/View/typeCommercant/v_EditerType.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45840406">
-          <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -624,7 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0">
           <caret line="16" column="60" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -632,17 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.58947366">
           <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Controller/TypeCommercantController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4583335">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#117#139#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,7 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.75">
           <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,18 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8886139">
           <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Model/CommercantModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35263157">
-          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding>
-            <element signature="e#1234#1481#0#PHP" expanded="false" />
-            <marker date="1458946861713" expanded="true" signature="2512:2680" placeholder="UPDATE comme..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.83947366">
           <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +656,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -699,7 +669,7 @@
         <state vertical-scroll-proportion="-2.0833333">
           <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
           <folding>
-            <element signature="e#7#87#0#PHP" expanded="true" />
+            <element signature="e#7#87#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -708,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.0416665">
           <caret line="21" column="69" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,15 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.666667">
           <caret line="50" column="147" selection-start-line="50" selection-start-column="147" selection-end-line="50" selection-end-column="147" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/View/commercant/v_EditerCommercant.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7605263">
-          <caret line="49" column="137" selection-start-line="49" selection-start-column="137" selection-end-line="49" selection-end-column="137" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,7 +701,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.2083335">
+        <state vertical-scroll-proportion="0.0">
           <caret line="35" column="70" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
           <folding>
             <element signature="e#279#536#0#PHP" expanded="false" />
@@ -751,7 +711,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/View/commercant/v_SupprimerCommercant.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
+        <state vertical-scroll-proportion="0.0">
           <caret line="15" column="61" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="61" />
           <folding />
         </state>
@@ -759,14 +719,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Controller/CommercantController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59210527">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.39473686">
+          <caret line="168" column="83" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="83" />
           <folding>
             <element signature="e#117#151#0#PHP" expanded="true" />
             <element signature="e#1044#1439#0#PHP" expanded="false" />
             <element signature="e#1445#3249#0#PHP" expanded="false" />
             <element signature="e#4298#4856#0#PHP" expanded="false" />
             <element signature="e#4862#6815#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/View/typeCommercant/v_listeAll.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/View/typeCommercant/v_CreerType.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4583333">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/View/typeCommercant/v_EditerType.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20526315">
+          <caret line="6" column="75" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/View/commercant/v_EditerCommercant.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23684211">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/View/typeCommercant/v_SupprimerType.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47368422">
+          <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Model/CommercantModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.85">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+          <folding>
+            <element signature="e#1234#1481#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Model/TypeCommercantModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.833333">
+          <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Controller/TypeCommercantController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7894737">
+          <caret line="71" column="89" selection-start-line="71" selection-start-column="89" selection-end-line="71" selection-end-column="89" />
+          <folding>
+            <element signature="e#117#139#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
